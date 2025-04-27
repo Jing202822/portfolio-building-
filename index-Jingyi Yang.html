@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio - About</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom Styles -->
+<style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    section {
+      scroll-margin-top: 80px;
+    }
+
+      /* Custom styles for the About section */
+      #about img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    #about img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body id="home">
+
+<!-- Sticky Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#home">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="d-flex align-items-center justify-content-center text-center" style="height:100vh;">
+  <div>
+    <h1 class="display-4 fw-bold">Welcome to My Portfolio</h1>
+    <p class="lead">Let's using data for good together!</p>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-5">About</h2>
+
+      <div class="d-flex justify-content-center mb-4">
+        <img src="images/about/Jingyi Yang.jpg" alt="Profile Picture" class="rounded-circle border border-3">
+      </div>
+
+      <div class="mx-auto" style="max-width: 600px;">
+        <p>
+            Hi! This is Jingyi Yang I am a graduate student pursuing a Master of Science in Data Analytics and Computational Social Science at UMass Amherst. After earning a Bachelor's degree in Sociology and Psychology, I realized the importance of data in the non-profit field and had a passion for using data for good. To be short, I am interested in using the various programing tools to analyze data and applying data analysis in the non-profit sector. 
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS (Optional, only needed if you plan to use interactive components like modals or navbar toggles) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+</section> <!-- About section closes here -->
+
+<!-- Now paste the Projects section -->
+<section id="projects" class="py-5">
+    <!-- Place this code directly AFTER the closing </section> tag of the About section -->
+
+<section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-5">Projects</h2>
+      <div class="row justify-content-center g-4">
+        
+        <!-- Project 1 -->
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="images/projects/SBS RISE Connect.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">SBS RISE Connects Program Evaluation project</h5>
+              <p class="card-text">
+                The SBS RISE Connects Program Evaluation project aims to improve the program. The project is one academic year long. The first-semester evaluation has been completed, and the second-semester evaluation is on the way. 
+              </p>
+              <div class="mt-auto">
+                <a href="file/SBS RISE Connect Program Evaluation Report-First Semester.pdf" class="btn btn-primary btn-sm me-2"> First semester report</a>
+                <a href="#" class="btn btn-outline-secondary btn-sm"> Second semester report (In-progress)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>  
+
+  <!-- Skills section starts here -->
+<section id="skills" class="py-5">
+<!-- Place this code AFTER the closing </section> tag of your "Projects" section -->
+
+<section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-5">Skills</h2>
+      <div class="row g-4">
+  
+        <!-- Skill 1 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="images/skills/RStudio_logo.png" class="card-img-top p-4" alt="RStudio Icon" style="height: 150px; object-fit: contain;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">RStudio</h5>
+              <p class="card-text"> Learned R through the core course of Data Analytics and Computational Social Science master program.</p>
+              <a href="https://jing202822.github.io/Final-Project-Jingyi-Yang/Final%20Project.html" class="mt-auto btn btn-primary">View Sample Work </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 2 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="images/skills/PowerBI_logo.png" class="card-img-top p-4" alt="PowerBI Icon" style="height: 150px; object-fit: contain;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">PowerBI</h5>
+              <p class="card-text"> Learned Power BI through workshop and shown in data dashboard for SBS Connect program evaluation project.</p>
+              <a href="file/RISE Program Evaluation Dashboard.pdf" class="mt-auto btn btn-primary"> View Sample Work </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 3 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="images/skills/SQL-logo.png" class="card-img-top p-4" alt="SQL Icon" style="height: 150px; object-fit: contain;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">SQL</h5>
+              <p class="card-text"> Learned Intro to SQL through DataFrenchy</p>
+              <a href="file/Intro to SQL-certificate.pdf" class="mt-auto btn btn-primary">Link to course complte certificate</a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 4 -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="images/skills/ArcGIS.png" class="card-img-top p-4" alt="ArcGIS Icon" style="height: 150px; object-fit: contain;">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">ArcGIS</h5>
+              <p class="card-text"> Learned GIS through DACSS 585: Intro to GIS in Data Analytics and Computational Social Science master program.</p>
+              <a href="file/Poster-GIS-Jingyi Yang.pdf" class="mt-auto btn btn-primary"> View Sample Work </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Skill 5 -->
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100 text-center">
+              <img src="images/skills/SPSS logo.jpg" class="card-img-top p-4" alt="SPSS Icon" style="height: 150px; object-fit: contain;">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">SPSS</h5>
+                <p class="card-text"> Learned SPSS through pratical class project</p>
+                <a href="https://umass-my.sharepoint.com/:p:/g/personal/jingyiyang_umass_edu/EUYW70G-IYFPmDdmV1600I8BaI8T1bH4AFOxEdXZQCRWzg?e=DzwAdI" class="mt-auto btn btn-primary">View Sample Work</a>
+              </div>
+            </div>
+          </div>
+    
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Contact Me section starts here -->
+<section id="contact" class="py-5 bg-dark text-white">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-5">Contact Me</h2>
+  
+      <!-- Contact Information -->
+      <div class="row mb-5 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="icons/gmail.jpg" alt="Email Icon" class="me-2" style="width: 30px;">
+            <span>jingyiyang@umass.edu jingyiy81@gmail.com</span>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-3">
+          <div class="d-flex align-items-center justify-content-center">
+            <img src="icons/phone.png" alt="Phone Icon" class="me-2" style="width: 30px;">
+            <span>+1 (603) 470-0926</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Social Media Icons -->
+      <div class="d-flex justify-content-center gap-4">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/jingyi-yang82" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn" class="d-flex align-items-center justify-content-center rounded-circle" style="width: 60px; height: 60px; background-color: white;">
+          <img src="icons/linkedin.png" alt="LinkedIn Icon" style="width: 30px;">
+        </a>
+        
+        <!-- GitHub -->
+        <a href="https://github.com/Jing202822" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub" class="d-flex align-items-center justify-content-center rounded-circle" style="width: 60px; height: 60px; background-color: white;">
+          <img src="icons/github.png" alt="GitHub Icon" style="width: 30px;">
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Initialize tooltips -->
+<script>
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</script>
+
+</body>
+</html>
